@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  redis:
+    image: redis:7.2.3
+    volumes:
+      - ./app:/app
+  app:
+    build:
+      context: .
+    volumes:
+      - ./app:/app
+    command: sleep infinity
