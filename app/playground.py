@@ -1,9 +1,8 @@
 import redis
 
-for ii in enumerate
 
 # Establish connection to Redis
-r = redis.Redis(host="redis", port=6379, db=0, decode_responses=True)
+r = redis.Redis(host="redis-stack", port=6379, db=0, decode_responses=True)
 
 # Set a Key-value pair
 r.set("name", "Alice")
