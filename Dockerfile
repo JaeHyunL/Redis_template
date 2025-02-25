@@ -4,6 +4,6 @@ COPY app /app/
 
 WORKDIR /app
 
-RUN pip install redis redlock-py
+RUN pip install redis redlock-py redis-om
 
 CMD ["sleep", "infinity"]
